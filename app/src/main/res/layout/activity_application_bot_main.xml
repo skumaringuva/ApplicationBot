@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_application_bot_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="com.sheshu.applicationbot.ApplicationBotMain">
+
+    <Spinner
+        android:id="@+id/package_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Title"/>
+
+
+    <Spinner
+        android:id="@+id/activity_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/package_spinner"
+        android:layout_marginTop="31dp"/>
+
+    <Spinner
+        android:id="@+id/content_resolve_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activity_spinner"
+        android:layout_marginTop="31dp"/>
+
+    <Spinner
+        android:id="@+id/service_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/content_resolve_spinner"
+        android:layout_marginTop="31dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonPanel">
+
+        <TextView
+            android:id="@+id/log_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log"
+            />
+    </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/service_spinner"
+    android:id="@+id/buttonPanel">
+
+    <Button
+        android:id="@+id/launch_activity_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Result"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/launch_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch Activity"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/launch_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Launch service"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/query_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="query provider"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>
